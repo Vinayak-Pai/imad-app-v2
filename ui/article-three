@@ -1,0 +1,29 @@
+<! DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Article three : Vinayak R Pai
+        </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    </head>
+    <body bg color='khaki'>
+        <div>
+             <a href='/'>Home</a>
+        </div>
+        <hr color='red'>
+        <h3>
+            Article three
+        </h3>
+        <div>
+            Feb 05, 2017
+        </div>
+        <div>
+            <p>
+                Hi, This is vinayak , writing the article three.
+            </p>
+        </div>
+       
+        
+        
+    </body>
+</html>

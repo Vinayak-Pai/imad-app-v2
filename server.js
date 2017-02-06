@@ -25,10 +25,8 @@ var articles={
             date: 'Feb 5, 2017',
             content:`
                 <p>
-                    Hi, This is vinayak , writing the article one.
-                    Eat healthy, stay fit.
-                    Love Nature ,animals.
-                    Help others and respect all.
+                    Hi, This is vinayak , writing the article two.
+                    Life is the moment we are living now.
                 </p>
             `
         },
@@ -38,10 +36,8 @@ var articles={
             date: 'Feb 5, 2017',
             content:`
                 <p>
-                    Hi, This is vinayak , writing the article one.
-                    Eat healthy, stay fit.
-                    Love Nature ,animals.
-                    Help others and respect all.
+                    Hi, This is vinayak , writing the article three.
+                   stay hungry , stay foolish.
                 </p>
             `
         },

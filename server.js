@@ -45,6 +45,7 @@ var articles={
 
 
 function createTemplate(data){
+    
     var title=data.title;
     var heading=data.heading;
     var date=data.date;
@@ -90,7 +91,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName',function(req,res){
-   var articleName=req.params.articleName;
+   var articleName = req.params.articleName;
    res.send(createTemplate(articles[articleName]));
 });
 

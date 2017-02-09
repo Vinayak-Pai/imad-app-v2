@@ -116,8 +116,8 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 var names=[];
-app.get('/submit-name/:name', function(req,res){
-    var name=req.params.name;
+app.get('/submit-name/', function(req,res){
+    var name=req.query.name;  // /submit-name?name-xxxxxx
     names.push(name);
     res.send(JSON.stringify(names));
 })

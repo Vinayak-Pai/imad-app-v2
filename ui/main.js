@@ -70,7 +70,7 @@ submit.onclick=function(){
         }
     };
         //make a request
-        request.open('GET','http://vinayak-pai.imad.hasura-app.iosubmit-name?name='+ name,true);
+        request.open('GET','http://vinayak-pai.imad.hasura-app.io/submit-name?name='+ name,true);
         request.send(null);
         
         

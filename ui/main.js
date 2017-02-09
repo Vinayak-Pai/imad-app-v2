@@ -25,12 +25,12 @@ var button= document.getElementById('counter');
 
 button.onclick = function(){
     
-    // create a request to counter end point
+    // create a request object to counter end point
     var request = new XMLHttpRequest();
     
     //capture the response and store in variable
     request.onreadystatechange = function(){
-        if (request.readystate=== XMLHttpRequest.DONE){
+        if (request.readyState=== XMLHttpRequest.DONE){
            if (request.status===200)
            {
                var counter=request.responseText;
@@ -42,7 +42,7 @@ button.onclick = function(){
         //make a request
         request.open('GET','http://vinayak-pai.imad.hasura-app.io/counter',true);
         request.send(null);
-    };
+        };
     
     
 

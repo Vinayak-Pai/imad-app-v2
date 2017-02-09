@@ -2,8 +2,9 @@ console.log('Loaded!');
 
 // modifying value using id
 var element= document.getElementById('main-text');
-
 element.innerHTML="The power of positive thinking";
+
+
 
 //move the image by id
 var img=document.getElementById('image');
@@ -18,16 +19,32 @@ img.onclick = function (){
     };
 
 
+
+
 var button= document.getElementById('counter');
-var counter=0;
+
 button.onclick = function(){
     
-    // make a request to counter end point
+    // create a request to counter end point
+    var Request = new XMLHttpRequest();
     
     //capture the response and store in variable
+    request.onreadystatechange = function(){
+        if (request.readystate=== XMLHttpRequest.DONE){
+           if (request.status===200)
+           {
+               var counter=request.responseText;
+               var span=document.getElementById('count');
+               span.innerHTML= counter.toString();
+           }
+        }
+    };
+        //make a request
+        request.open('GET','http://vinayak-pai.imad.hasura-app.io/counter',true);
+        request.send(null);
+    };
     
-    // render the response in the span variable
-    counter=counter+1;
-    var span=document.getElementById('count');
-    span.innerHTML= counter.toString();
-};
+    
+
+
+

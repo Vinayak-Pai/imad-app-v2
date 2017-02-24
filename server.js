@@ -14,43 +14,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-    'article-one':{
-            title: 'article one :Vinayak Pai',
-            heading: ' article one',
-            date: 'Feb 5, 2017',
-            content:`
-                <p>
-                    Hi, This is vinayak , writing the article one.
-                    Eat healthy, stay fit.
-                    Love Nature ,animals.
-                    Help others and respect all.
-                </p>
-            `
-        },
-    'article-two':{
-            title: 'article two :Vinayak Pai',
-            heading: ' article two',
-            date: 'Feb 5, 2017',
-            content:`
-                <p>
-                    Hi, This is vinayak , writing the article two.
-                    Life is the moment we are living now.
-                </p>
-            `
-        },
-    'article-three':{
-            title: 'article three :Vinayak Pai',
-            heading: ' article three',
-            date: 'Feb 5, 2017',
-            content:`
-                <p>
-                    Hi, This is vinayak , writing the article three.
-                   stay hungry , stay foolish.
-                </p>
-            `
-        },
-};
+
 
 
 function createTemplate(data){

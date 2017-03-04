@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
-var  bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 
 var config = {
  user: 'vinayak-pai',
@@ -88,7 +88,7 @@ app.post('/create-user',function(req,res){
          if (err){
            res.status(500).send(err.toString());
        } else{
-           res.send('user successfully created' + username);
+           res.send('user successfully created: ' + username);
        } 
     });
 });

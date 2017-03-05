@@ -21,7 +21,7 @@ app.use(session({
     secret: 'SomeRandomSecretValue',
     Cookie: {maxAge: 1000*60*60*24*30}
     
-})
+}));
 
 
 function createTemplate(data){

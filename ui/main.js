@@ -45,7 +45,7 @@ submit.onclick=function(){
         console.log(password);
         request.open('POST','http://vinayak-pai.imad.hasura-app.io/login', true);
         request.setRequestHeader("Conetnt-Type", "application/json");
-        request.send(JSON.strinigy({username:username, password:password}));
+        request.send(JSON.stringify({username:username, password:password}));
         
         
     // capture it as list

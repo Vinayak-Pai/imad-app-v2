@@ -17,6 +17,41 @@ img.onclick = function (){
     var interval= setInterval(moveRight, 50);
     
     };
+    
+//submit username/password
+var submit = document.getElementById("submit_button");
+submit.onclick=function(){
+    //make a request to server and send name
+     var request = new XMLHttpRequest();
+    
+    //capture the response and store in variable
+    request.onreadystatechange = function(){
+        if (request.readyState=== XMLHttpRequest.DONE){
+           if (request.status===200)
+           {
+           console.log("user logged in");
+           alert("logged in successfully");
+           }else if (request.status===403){
+               alert("username/password is invalid");
+           } else if (request.status===500){
+               alert("something went wrong on server");
+           }
+        }
+    };
+        //make a request
+        var username= document.getElementById("username").value;
+        var password= document.getElementById("password").value;
+        console.log(username);
+        console.log(password);
+        request.open('POST','http://vinayak-pai.imad.hasura-app.io/login', true);
+        request.setRequestHeader("Conetnt-Type", "application/json");
+        request.send(JSON.strinigy({username:username, password:password}));
+        
+        
+    // capture it as list
+   
+};
+
 
 
 

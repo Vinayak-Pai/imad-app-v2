@@ -48,7 +48,7 @@ submit.onclick=function(){
         request.send(JSON.stringify({username:username, password:password}));
         
         
-    // capture it as list
+    
    
 };
 
